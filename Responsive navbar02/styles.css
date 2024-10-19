@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("/img/landing-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.178);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.326);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #a4a4a493;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 25opx;
+    z-index: 999;
+    background-color: rgba(3, 3, 3, 0.313);
+    backdrop-filter: blur(2px);
+    box-shadow: -10px 3px 10px rgba(0, 0, 0, 0.326);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;    
+}
+
+.sidebar {
+    width: 100%;
+}
+
+.siderbar a {
+    width: 100%;
+}
+
+.menubtn{
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menubtn{
+        display: block;
+    }
+    .crossbtn {
+        display: block;
+    }
+}
